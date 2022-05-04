@@ -1,0 +1,26 @@
+<div class="user-container" >
+    <div class="user-table" >
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of user; let i=index">
+                <tr>
+                    <td>{{user[i].id}}</td>
+                    <td>{{user[i].firstName}}</td>
+                    <td>{{user[i].lastName}}</td>
+                    <td>{{user[i].email}}</td>
+                    <td>{{user[i].contact}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+</div>
